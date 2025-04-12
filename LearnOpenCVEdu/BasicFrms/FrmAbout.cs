@@ -54,5 +54,10 @@ namespace LearnOpenCVEdu.BasicFrms
             LinkLabel link = sender as LinkLabel;
             System.Diagnostics.Process.Start(link.Text);
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
