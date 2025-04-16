@@ -36,7 +36,6 @@
             this.TrackThreshold = new System.Windows.Forms.TrackBar();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.BtnConfirm = new System.Windows.Forms.Button();
-            this.LinkHough = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.NumericThickness = new System.Windows.Forms.NumericUpDown();
@@ -57,7 +56,8 @@
             0,
             0,
             65536});
-            this.NumberRho.Location = new System.Drawing.Point(179, 105);
+            this.NumberRho.Location = new System.Drawing.Point(134, 79);
+            this.NumberRho.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NumberRho.Maximum = new decimal(new int[] {
             3,
             0,
@@ -69,7 +69,7 @@
             0,
             65536});
             this.NumberRho.Name = "NumberRho";
-            this.NumberRho.Size = new System.Drawing.Size(120, 39);
+            this.NumberRho.Size = new System.Drawing.Size(90, 31);
             this.NumberRho.TabIndex = 0;
             this.NumberRho.Value = new decimal(new int[] {
             8,
@@ -82,9 +82,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(18, 105);
+            this.label1.Location = new System.Drawing.Point(14, 79);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 31);
+            this.label1.Size = new System.Drawing.Size(111, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "距离值rho：";
             // 
@@ -92,9 +93,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(17, 157);
+            this.label2.Location = new System.Drawing.Point(13, 118);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 31);
+            this.label2.Size = new System.Drawing.Size(64, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "阈值：";
             // 
@@ -102,18 +104,20 @@
             // 
             this.LblThreshold.AutoSize = true;
             this.LblThreshold.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.LblThreshold.Location = new System.Drawing.Point(679, 162);
+            this.LblThreshold.Location = new System.Drawing.Point(509, 122);
+            this.LblThreshold.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblThreshold.Name = "LblThreshold";
-            this.LblThreshold.Size = new System.Drawing.Size(68, 31);
+            this.LblThreshold.Size = new System.Drawing.Size(52, 24);
             this.LblThreshold.TabIndex = 15;
             this.LblThreshold.Text = "label";
             // 
             // TrackThreshold
             // 
-            this.TrackThreshold.Location = new System.Drawing.Point(95, 157);
+            this.TrackThreshold.Location = new System.Drawing.Point(71, 118);
+            this.TrackThreshold.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TrackThreshold.Maximum = 255;
             this.TrackThreshold.Name = "TrackThreshold";
-            this.TrackThreshold.Size = new System.Drawing.Size(590, 90);
+            this.TrackThreshold.Size = new System.Drawing.Size(442, 69);
             this.TrackThreshold.SmallChange = 2;
             this.TrackThreshold.TabIndex = 14;
             this.TrackThreshold.Value = 90;
@@ -122,9 +126,10 @@
             // BtnCancel
             // 
             this.BtnCancel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnCancel.Location = new System.Drawing.Point(486, 341);
+            this.BtnCancel.Location = new System.Drawing.Point(364, 256);
+            this.BtnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(140, 72);
+            this.BtnCancel.Size = new System.Drawing.Size(105, 54);
             this.BtnCancel.TabIndex = 17;
             this.BtnCancel.Text = "取消";
             this.BtnCancel.UseVisualStyleBackColor = true;
@@ -133,25 +138,14 @@
             // BtnConfirm
             // 
             this.BtnConfirm.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnConfirm.Location = new System.Drawing.Point(340, 341);
+            this.BtnConfirm.Location = new System.Drawing.Point(255, 256);
+            this.BtnConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnConfirm.Name = "BtnConfirm";
-            this.BtnConfirm.Size = new System.Drawing.Size(140, 72);
+            this.BtnConfirm.Size = new System.Drawing.Size(105, 54);
             this.BtnConfirm.TabIndex = 16;
             this.BtnConfirm.Text = "确定";
             this.BtnConfirm.UseVisualStyleBackColor = true;
             this.BtnConfirm.Click += new System.EventHandler(this.BtnConfirm_Click);
-            // 
-            // LinkHough
-            // 
-            this.LinkHough.AutoSize = true;
-            this.LinkHough.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.LinkHough.Location = new System.Drawing.Point(18, 37);
-            this.LinkHough.Name = "LinkHough";
-            this.LinkHough.Size = new System.Drawing.Size(378, 31);
-            this.LinkHough.TabIndex = 18;
-            this.LinkHough.TabStop = true;
-            this.LinkHough.Text = "Python+OpenCV教程：霍夫变换";
-            this.LinkHough.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkHough_LinkClicked);
             // 
             // groupBox2
             // 
@@ -160,9 +154,11 @@
             this.groupBox2.Controls.Add(this.BtnCustomColor);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox2.Location = new System.Drawing.Point(24, 240);
+            this.groupBox2.Location = new System.Drawing.Point(18, 180);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(296, 173);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(222, 130);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "绘制选项";
@@ -171,9 +167,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(22, 59);
+            this.label10.Location = new System.Drawing.Point(16, 44);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 31);
+            this.label10.Size = new System.Drawing.Size(64, 24);
             this.label10.TabIndex = 12;
             this.label10.Text = "颜色：";
             // 
@@ -181,7 +178,8 @@
             // 
             this.NumericThickness.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(209)))), ((int)(((byte)(209)))));
             this.NumericThickness.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.NumericThickness.Location = new System.Drawing.Point(136, 110);
+            this.NumericThickness.Location = new System.Drawing.Point(102, 82);
+            this.NumericThickness.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NumericThickness.Minimum = new decimal(new int[] {
             1,
             0,
@@ -189,7 +187,7 @@
             0});
             this.NumericThickness.Name = "NumericThickness";
             this.NumericThickness.ReadOnly = true;
-            this.NumericThickness.Size = new System.Drawing.Size(142, 39);
+            this.NumericThickness.Size = new System.Drawing.Size(106, 31);
             this.NumericThickness.TabIndex = 13;
             this.NumericThickness.Value = new decimal(new int[] {
             1,
@@ -202,9 +200,10 @@
             // 
             this.BtnCustomColor.BackColor = System.Drawing.Color.Red;
             this.BtnCustomColor.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnCustomColor.Location = new System.Drawing.Point(136, 50);
+            this.BtnCustomColor.Location = new System.Drawing.Point(102, 38);
+            this.BtnCustomColor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnCustomColor.Name = "BtnCustomColor";
-            this.BtnCustomColor.Size = new System.Drawing.Size(142, 49);
+            this.BtnCustomColor.Size = new System.Drawing.Size(106, 37);
             this.BtnCustomColor.TabIndex = 11;
             this.BtnCustomColor.UseVisualStyleBackColor = false;
             this.BtnCustomColor.Click += new System.EventHandler(this.BtnCustomColor_Click);
@@ -213,21 +212,21 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(22, 118);
+            this.label9.Location = new System.Drawing.Point(16, 88);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(86, 31);
+            this.label9.Size = new System.Drawing.Size(64, 24);
             this.label9.TabIndex = 14;
             this.label9.Text = "线宽：";
             // 
             // FrmHoughs
             // 
             this.AcceptButton = this.BtnConfirm;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(760, 427);
+            this.ClientSize = new System.Drawing.Size(570, 320);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.LinkHough);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnConfirm);
             this.Controls.Add(this.LblThreshold);
@@ -237,6 +236,7 @@
             this.Controls.Add(this.NumberRho);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmHoughs";
@@ -261,7 +261,6 @@
         private System.Windows.Forms.TrackBar TrackThreshold;
         private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.Button BtnConfirm;
-        private System.Windows.Forms.LinkLabel LinkHough;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown NumericThickness;

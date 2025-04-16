@@ -37,7 +37,6 @@
             this.CbbThresholdType = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.CheckOtsu = new System.Windows.Forms.CheckBox();
-            this.LinkThreshold = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.LblThreshold = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.TrackThreshold)).BeginInit();
@@ -47,19 +46,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(28, 101);
+            this.label1.Location = new System.Drawing.Point(21, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 31);
+            this.label1.Size = new System.Drawing.Size(64, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "阈值：";
             // 
             // TrackThreshold
             // 
-            this.TrackThreshold.Location = new System.Drawing.Point(107, 101);
-            this.TrackThreshold.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TrackThreshold.Location = new System.Drawing.Point(80, 76);
+            this.TrackThreshold.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TrackThreshold.Maximum = 255;
             this.TrackThreshold.Name = "TrackThreshold";
-            this.TrackThreshold.Size = new System.Drawing.Size(430, 90);
+            this.TrackThreshold.Size = new System.Drawing.Size(322, 69);
             this.TrackThreshold.TabIndex = 1;
             this.TrackThreshold.Value = 127;
             this.TrackThreshold.Scroll += new System.EventHandler(this.TrackThreshold_Scroll);
@@ -67,10 +67,10 @@
             // BtnConfirm
             // 
             this.BtnConfirm.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnConfirm.Location = new System.Drawing.Point(325, 371);
-            this.BtnConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnConfirm.Location = new System.Drawing.Point(244, 278);
+            this.BtnConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnConfirm.Name = "BtnConfirm";
-            this.BtnConfirm.Size = new System.Drawing.Size(140, 72);
+            this.BtnConfirm.Size = new System.Drawing.Size(105, 54);
             this.BtnConfirm.TabIndex = 4;
             this.BtnConfirm.Text = "确定";
             this.BtnConfirm.UseVisualStyleBackColor = true;
@@ -79,10 +79,10 @@
             // BtnCancel
             // 
             this.BtnCancel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnCancel.Location = new System.Drawing.Point(471, 371);
-            this.BtnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnCancel.Location = new System.Drawing.Point(353, 278);
+            this.BtnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(140, 72);
+            this.BtnCancel.Size = new System.Drawing.Size(105, 54);
             this.BtnCancel.TabIndex = 5;
             this.BtnCancel.Text = "取消";
             this.BtnCancel.UseVisualStyleBackColor = true;
@@ -92,9 +92,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(28, 263);
+            this.label2.Location = new System.Drawing.Point(21, 197);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 31);
+            this.label2.Size = new System.Drawing.Size(100, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "阈值方式：";
             // 
@@ -110,10 +111,10 @@
             "cv2.THRESH_TRUNC",
             "cv2.THRESH_TOZERO",
             "cv2.THRESH_TOZERO_INV"});
-            this.CbbThresholdType.Location = new System.Drawing.Point(168, 260);
-            this.CbbThresholdType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CbbThresholdType.Location = new System.Drawing.Point(126, 195);
+            this.CbbThresholdType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CbbThresholdType.Name = "CbbThresholdType";
-            this.CbbThresholdType.Size = new System.Drawing.Size(443, 39);
+            this.CbbThresholdType.Size = new System.Drawing.Size(333, 32);
             this.CbbThresholdType.TabIndex = 2;
             this.CbbThresholdType.SelectedIndexChanged += new System.EventHandler(this.CbbThresholdType_SelectedIndexChanged);
             // 
@@ -121,9 +122,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(28, 196);
+            this.label3.Location = new System.Drawing.Point(21, 147);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 31);
+            this.label3.Size = new System.Drawing.Size(100, 24);
             this.label3.TabIndex = 0;
             this.label3.Text = "最大阈值：";
             // 
@@ -131,34 +133,23 @@
             // 
             this.CheckOtsu.AutoSize = true;
             this.CheckOtsu.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.CheckOtsu.Location = new System.Drawing.Point(168, 314);
-            this.CheckOtsu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CheckOtsu.Location = new System.Drawing.Point(126, 236);
+            this.CheckOtsu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CheckOtsu.Name = "CheckOtsu";
-            this.CheckOtsu.Size = new System.Drawing.Size(197, 35);
+            this.CheckOtsu.Size = new System.Drawing.Size(149, 28);
             this.CheckOtsu.TabIndex = 3;
             this.CheckOtsu.Text = "Otsu自动阈值";
             this.CheckOtsu.UseVisualStyleBackColor = true;
             this.CheckOtsu.CheckedChanged += new System.EventHandler(this.CheckOtsu_CheckedChanged);
             // 
-            // LinkThreshold
-            // 
-            this.LinkThreshold.AutoSize = true;
-            this.LinkThreshold.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.LinkThreshold.Location = new System.Drawing.Point(27, 30);
-            this.LinkThreshold.Name = "LinkThreshold";
-            this.LinkThreshold.Size = new System.Drawing.Size(378, 31);
-            this.LinkThreshold.TabIndex = 0;
-            this.LinkThreshold.TabStop = true;
-            this.LinkThreshold.Text = "Python+OpenCV教程：阈值分割";
-            this.LinkThreshold.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkThreshold_LinkClicked);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(152, 197);
+            this.label4.Location = new System.Drawing.Point(114, 148);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 31);
+            this.label4.Size = new System.Drawing.Size(43, 24);
             this.label4.TabIndex = 0;
             this.label4.Text = "255";
             // 
@@ -166,21 +157,21 @@
             // 
             this.LblThreshold.AutoSize = true;
             this.LblThreshold.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.LblThreshold.Location = new System.Drawing.Point(543, 104);
+            this.LblThreshold.Location = new System.Drawing.Point(407, 78);
+            this.LblThreshold.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblThreshold.Name = "LblThreshold";
-            this.LblThreshold.Size = new System.Drawing.Size(68, 31);
+            this.LblThreshold.Size = new System.Drawing.Size(52, 24);
             this.LblThreshold.TabIndex = 14;
             this.LblThreshold.Text = "label";
             // 
             // FuncThreshold
             // 
             this.AcceptButton = this.BtnConfirm;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(641, 464);
+            this.ClientSize = new System.Drawing.Size(481, 348);
             this.Controls.Add(this.LblThreshold);
-            this.Controls.Add(this.LinkThreshold);
             this.Controls.Add(this.CheckOtsu);
             this.Controls.Add(this.CbbThresholdType);
             this.Controls.Add(this.BtnCancel);
@@ -193,7 +184,7 @@
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FuncThreshold";
@@ -216,7 +207,6 @@
         private System.Windows.Forms.ComboBox CbbThresholdType;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox CheckOtsu;
-        private System.Windows.Forms.LinkLabel LinkThreshold;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label LblThreshold;
     }

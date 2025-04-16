@@ -34,7 +34,6 @@
             this.RadioBothDirection = new System.Windows.Forms.RadioButton();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.BtnConfirm = new System.Windows.Forms.Button();
-            this.LinkGeometric = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -43,10 +42,10 @@
             this.RadioHorizontal.AutoSize = true;
             this.RadioHorizontal.Checked = true;
             this.RadioHorizontal.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.RadioHorizontal.Location = new System.Drawing.Point(33, 96);
-            this.RadioHorizontal.Margin = new System.Windows.Forms.Padding(5);
+            this.RadioHorizontal.Location = new System.Drawing.Point(25, 72);
+            this.RadioHorizontal.Margin = new System.Windows.Forms.Padding(4);
             this.RadioHorizontal.Name = "RadioHorizontal";
-            this.RadioHorizontal.Size = new System.Drawing.Size(141, 35);
+            this.RadioHorizontal.Size = new System.Drawing.Size(107, 28);
             this.RadioHorizontal.TabIndex = 1;
             this.RadioHorizontal.TabStop = true;
             this.RadioHorizontal.Text = "水平翻转";
@@ -57,10 +56,10 @@
             // 
             this.RadioVertical.AutoSize = true;
             this.RadioVertical.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.RadioVertical.Location = new System.Drawing.Point(33, 156);
-            this.RadioVertical.Margin = new System.Windows.Forms.Padding(5);
+            this.RadioVertical.Location = new System.Drawing.Point(25, 117);
+            this.RadioVertical.Margin = new System.Windows.Forms.Padding(4);
             this.RadioVertical.Name = "RadioVertical";
-            this.RadioVertical.Size = new System.Drawing.Size(141, 35);
+            this.RadioVertical.Size = new System.Drawing.Size(107, 28);
             this.RadioVertical.TabIndex = 2;
             this.RadioVertical.Text = "垂直翻转";
             this.RadioVertical.UseVisualStyleBackColor = true;
@@ -70,10 +69,10 @@
             // 
             this.RadioBothDirection.AutoSize = true;
             this.RadioBothDirection.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.RadioBothDirection.Location = new System.Drawing.Point(33, 216);
-            this.RadioBothDirection.Margin = new System.Windows.Forms.Padding(5);
+            this.RadioBothDirection.Location = new System.Drawing.Point(25, 162);
+            this.RadioBothDirection.Margin = new System.Windows.Forms.Padding(4);
             this.RadioBothDirection.Name = "RadioBothDirection";
-            this.RadioBothDirection.Size = new System.Drawing.Size(189, 35);
+            this.RadioBothDirection.Size = new System.Drawing.Size(143, 28);
             this.RadioBothDirection.TabIndex = 3;
             this.RadioBothDirection.Text = "水平垂直翻转";
             this.RadioBothDirection.UseVisualStyleBackColor = true;
@@ -82,9 +81,10 @@
             // BtnCancel
             // 
             this.BtnCancel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnCancel.Location = new System.Drawing.Point(272, 179);
+            this.BtnCancel.Location = new System.Drawing.Point(204, 134);
+            this.BtnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(182, 72);
+            this.BtnCancel.Size = new System.Drawing.Size(136, 54);
             this.BtnCancel.TabIndex = 5;
             this.BtnCancel.Text = "取消";
             this.BtnCancel.UseVisualStyleBackColor = true;
@@ -93,25 +93,14 @@
             // BtnConfirm
             // 
             this.BtnConfirm.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnConfirm.Location = new System.Drawing.Point(272, 99);
+            this.BtnConfirm.Location = new System.Drawing.Point(204, 74);
+            this.BtnConfirm.Margin = new System.Windows.Forms.Padding(2);
             this.BtnConfirm.Name = "BtnConfirm";
-            this.BtnConfirm.Size = new System.Drawing.Size(182, 72);
+            this.BtnConfirm.Size = new System.Drawing.Size(136, 54);
             this.BtnConfirm.TabIndex = 4;
             this.BtnConfirm.Text = "确定";
             this.BtnConfirm.UseVisualStyleBackColor = true;
             this.BtnConfirm.Click += new System.EventHandler(this.BtnConfirm_Click);
-            // 
-            // LinkGeometric
-            // 
-            this.LinkGeometric.AutoSize = true;
-            this.LinkGeometric.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.LinkGeometric.Location = new System.Drawing.Point(28, 33);
-            this.LinkGeometric.Name = "LinkGeometric";
-            this.LinkGeometric.Size = new System.Drawing.Size(426, 31);
-            this.LinkGeometric.TabIndex = 0;
-            this.LinkGeometric.TabStop = true;
-            this.LinkGeometric.Text = "Python+OpenCV教程：图像几何变换";
-            this.LinkGeometric.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkGeometric_LinkClicked);
             // 
             // label1
             // 
@@ -119,21 +108,21 @@
             this.label1.BackColor = System.Drawing.Color.Gray;
             this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 279);
+            this.label1.Location = new System.Drawing.Point(0, 208);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 28);
+            this.label1.Size = new System.Drawing.Size(230, 22);
             this.label1.TabIndex = 6;
             this.label1.Text = "cv2.flip(src,flipCode)";
             // 
             // FrmGeometricFlip
             // 
             this.AcceptButton = this.BtnConfirm;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.ClientSize = new System.Drawing.Size(482, 307);
+            this.ClientSize = new System.Drawing.Size(362, 230);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.LinkGeometric);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnConfirm);
             this.Controls.Add(this.RadioBothDirection);
@@ -142,7 +131,7 @@
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmGeometricFlip";
@@ -161,7 +150,6 @@
         private System.Windows.Forms.RadioButton RadioBothDirection;
         private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.Button BtnConfirm;
-        private System.Windows.Forms.LinkLabel LinkGeometric;
         private System.Windows.Forms.Label label1;
     }
 }

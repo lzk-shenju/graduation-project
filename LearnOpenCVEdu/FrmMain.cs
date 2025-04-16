@@ -12,6 +12,8 @@ using LearnOpenCVEdu.FunctionArgs;
 using Emgu.CV.Util;
 using Emgu.CV.Structure;
 using System.IO;
+using LearnOpenCVEdu.Utils;
+
 
 namespace LearnOpenCVEdu
 {
@@ -1355,5 +1357,125 @@ namespace LearnOpenCVEdu
             FrmNormalImage frmNormalImage = new FrmNormalImage(img, filename) { MdiParent = this };
             frmNormalImage.Show();
         }
+
+        private void 高级ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 直方图均衡化ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 判断图像是否为空
+            if (mCurrentImage == null)
+            {
+                MessageBox.Show("当前没有加载图像！", "提示");
+                return;
+            }
+
+            // 判断是否是单通道图像（灰度图）
+            if (mCurrentImage.NumberOfChannels != 1)
+            {
+                MessageBox.Show("直方图均衡化仅适用于单通道图像，请先将图像转换为灰度图！", "警告");
+                return;
+            }
+
+            // 创建一个输出图像 Mat
+            Mat equalizedImage = new Mat();
+
+            // 调用 OpenCV 的直方图均衡化函数
+            CvInvoke.EqualizeHist(mCurrentImage, equalizedImage);
+
+            // 更新主图像并显示
+            mCurrentImage = equalizedImage;
+            UpdateCurrentImage("直方图均衡化");
+
+            // 显示在主图像窗口
+            mFrmMainImage.SetImageSource(mCurrentImage);
+            ShowAlonePicture(mCurrentImage, "直方图均衡化结果");
+        }
+
+        private void 直方图规定化ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 当前图像不能为空
+            if (mCurrentImage == null)
+            {
+                MessageBox.Show("当前没有加载主图像！", "提示");
+                return;
+            }
+            // 当前图像必须是灰度图
+            if (mCurrentImage.NumberOfChannels != 1)
+            {
+                MessageBox.Show("直方图规定化仅适用于单通道图像，请先将主图像转换为灰度图！", "警告");
+                return;
+            }
+            // 打开目标图像文件
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "请选择用于规定化的目标图像";
+            ofd.Filter = "图像文件|*.bmp;*.jpg;*.jpeg;*.png";
+            if (ofd.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+
+            // 获取选择的文件路径
+            string filePath = ofd.FileName;
+
+            Mat targetImage = CvInvoke.Imread(filePath, LoadImageType.Grayscale);
+            if (targetImage.IsEmpty)
+            {
+                MessageBox.Show("目标图像加载失败！", "错误");
+                return;
+            }
+            // 执行直方图规定化
+
+            Mat result = HistogramUtils.MatchHistogram(mCurrentImage, targetImage);
+            // 更新当前图像并显示
+            mCurrentImage = result;
+            UpdateCurrentImage("直方图规定化");
+            mFrmMainImage.SetImageSource(mCurrentImage);
+            ShowAlonePicture(mCurrentImage, "直方图规定化结果");
+        }
+
+        private void MenuCameraCalibration_Click(object sender, EventArgs e)
+        {
+            // 判断图像是否为空
+            if (mCurrentImage == null)
+            {
+                MessageBox.Show("当前没有加载图像！", "提示");
+                return;
+            }
+
+            // 创建一个输出图像 Mat
+            Mat sharpenedImage = ImageProcessing.SharpenImage(mCurrentImage);
+
+            // 更新主图像并显示
+            mCurrentImage = sharpenedImage;
+            UpdateCurrentImage("图像锐化");
+
+            // 显示在主图像窗口
+            mFrmMainImage.SetImageSource(mCurrentImage);
+            ShowAlonePicture(mCurrentImage, "图像锐化结果");
+        }
+
+        private void 图像锐化ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (mCurrentImage == null)
+            {
+                MessageBox.Show("当前没有加载图像！", "提示");
+                return;
+            }
+
+            // 创建一个输出图像 Mat
+            Mat sharpenedImage = ImageProcessing.SharpenImage(mCurrentImage);
+
+            // 更新主图像并显示
+            mCurrentImage = sharpenedImage;
+            UpdateCurrentImage("图像锐化");
+
+            // 显示在主图像窗口
+            mFrmMainImage.SetImageSource(mCurrentImage);
+            ShowAlonePicture(mCurrentImage, "图像锐化结果");
+        }
     }
+    
 }

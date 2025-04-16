@@ -61,5 +61,10 @@ namespace LearnOpenCVEdu.FrmFunctions
             MainHistogram.GenerateHistograms(img, 255);
             MainHistogram.Refresh();
         }
+
+        private void MainHistogram_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

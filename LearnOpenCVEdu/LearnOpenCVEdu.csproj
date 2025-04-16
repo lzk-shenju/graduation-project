@@ -40,6 +40,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -205,6 +206,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTeachingPages\TeachingCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmTeachingPages\TeachingCardControl.Designer.cs">
+      <DependentUpon>TeachingCardControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="FunctionArgs\BlurAverageArgs.cs" />
     <Compile Include="FunctionArgs\CannyEdgeArgs.cs" />
     <Compile Include="FunctionArgs\ContoursArgs.cs" />
@@ -218,6 +225,7 @@
     <Compile Include="FunctionArgs\MainImageArgs.cs" />
     <Compile Include="FunctionArgs\ThresholdArgs.cs" />
     <Compile Include="FunctionArgs\VideoCaptureArgs.cs" />
+    <Compile Include="HistogramUtils.cs" />
     <Compile Include="Models\ConstantFlags.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -280,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTeachingPages\TeachingCardControl.resx">
+      <DependentUpon>TeachingCardControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -360,6 +371,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -81,5 +81,10 @@ namespace LearnOpenCVEdu.FrmFunctions
                 MessageBox.Show(ConstantFlags.COMMON_PASS_VALUE_ERROR);
             }
         }
+
+        private void CbbCvtColorTypes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

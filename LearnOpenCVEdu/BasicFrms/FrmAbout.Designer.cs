@@ -59,16 +59,16 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(573, 90);
+            this.panel1.Size = new System.Drawing.Size(790, 90);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LearnOpenCVEdu.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(9, 34);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(75, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -81,7 +81,7 @@
             this.BtnClose.BackgroundImage = global::LearnOpenCVEdu.Properties.Resources.appbar_close;
             this.BtnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BtnClose.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnClose.Location = new System.Drawing.Point(536, -2);
+            this.BtnClose.Location = new System.Drawing.Point(751, 0);
             this.BtnClose.Margin = new System.Windows.Forms.Padding(0);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.Size = new System.Drawing.Size(39, 39);
@@ -105,16 +105,16 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(140)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(573, 14);
+            this.panel2.Size = new System.Drawing.Size(790, 14);
             this.panel2.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(26, 322);
+            this.label1.Location = new System.Drawing.Point(26, 256);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 28);
@@ -125,7 +125,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(26, 372);
+            this.label2.Location = new System.Drawing.Point(26, 304);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 28);
@@ -141,7 +141,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 28);
             this.label3.TabIndex = 1;
-            this.label3.Text = "初衷：";
+            this.label3.Text = "说明：";
             // 
             // label4
             // 
@@ -153,12 +153,13 @@
             this.label4.Size = new System.Drawing.Size(75, 28);
             this.label4.TabIndex = 1;
             this.label4.Text = "博客：";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Consolas", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(26, 471);
+            this.label6.Location = new System.Drawing.Point(27, 362);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 24);
@@ -172,7 +173,7 @@
             this.label5.Location = new System.Drawing.Point(119, 202);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(424, 96);
+            this.label5.Size = new System.Drawing.Size(154, 24);
             this.label5.TabIndex = 1;
             this.label5.Text = "此项目为毕设使用";
             // 
@@ -196,17 +197,17 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 24);
             this.label8.TabIndex = 1;
-            this.label8.Text = "alpha 1.0";
+            this.label8.Text = "alpha 1.1";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Consolas", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(119, 324);
+            this.label9.Location = new System.Drawing.Point(119, 256);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 24);
+            this.label9.Size = new System.Drawing.Size(82, 24);
             this.label9.TabIndex = 1;
             this.label9.Text = "刘哲康";
             // 
@@ -214,10 +215,10 @@
             // 
             this.LinkMail.AutoSize = true;
             this.LinkMail.Font = new System.Drawing.Font("Consolas", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LinkMail.Location = new System.Drawing.Point(119, 373);
+            this.LinkMail.Location = new System.Drawing.Point(119, 308);
             this.LinkMail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkMail.Name = "LinkMail";
-            this.LinkMail.Size = new System.Drawing.Size(238, 24);
+            this.LinkMail.Size = new System.Drawing.Size(214, 24);
             this.LinkMail.TabIndex = 2;
             this.LinkMail.TabStop = true;
             this.LinkMail.Text = "shenjulzk@163.com";
@@ -230,25 +231,22 @@
             this.LinkWeb.Location = new System.Drawing.Point(119, 422);
             this.LinkWeb.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LinkWeb.Name = "LinkWeb";
-            this.LinkWeb.Size = new System.Drawing.Size(238, 24);
+            this.LinkWeb.Size = new System.Drawing.Size(0, 24);
             this.LinkWeb.TabIndex = 2;
             this.LinkWeb.TabStop = true;
-            //此处是博客地址
-            this.LinkWeb.Text = "";
             this.LinkWeb.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkAll_LinkClicked);
             // 
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Font = new System.Drawing.Font("Consolas", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel3.Location = new System.Drawing.Point(119, 470);
+            this.linkLabel3.Location = new System.Drawing.Point(119, 362);
             this.linkLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(334, 24);
+            this.linkLabel3.Size = new System.Drawing.Size(634, 24);
             this.linkLabel3.TabIndex = 2;
             this.linkLabel3.TabStop = true;
-            //此处填写仓库地址
-            this.linkLabel3.Text = "";
+            this.linkLabel3.Text = "https://github.com/lzk-shenju/graduation-project.git";
             this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkAll_LinkClicked);
             // 
             // FrmAbout
@@ -256,7 +254,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.ClientSize = new System.Drawing.Size(573, 548);
+            this.ClientSize = new System.Drawing.Size(790, 420);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.LinkWeb);
             this.Controls.Add(this.LinkMail);
@@ -272,7 +270,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmAbout";

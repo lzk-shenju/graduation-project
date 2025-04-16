@@ -91,5 +91,10 @@ namespace LearnOpenCVEdu.BasicFrms
             }
             else Check100Percent.Checked = true;
         }
+
+        private void PicImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
